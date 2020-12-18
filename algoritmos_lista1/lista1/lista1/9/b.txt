@@ -1,0 +1,2 @@
+V-O somatório dos FB's da folha será estritamente menor que a quantidade de nós, 
+pois vemos que FB's é menor igual a quantidade de folhas.

@@ -1,0 +1,1 @@
+Não corresponde a um Heap, pois fere o conceito de pai sempre maior que filho

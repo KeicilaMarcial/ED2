@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538076873 source:c:\users\cleis\documents\ufes\5º período\edii\radixsort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

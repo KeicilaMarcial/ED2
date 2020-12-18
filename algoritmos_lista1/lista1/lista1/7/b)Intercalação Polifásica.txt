@@ -1,0 +1,41 @@
+Intercalação Polifásica
+
+->Observação
+-A ontercalação é realizada em muitas fases.
+-As fases não envolvem todos os blocos.
+-Nenhuma copia direta entre fitas é realizadas.
+-A implementação da intercalação polifásica é simples.
+-A parte mais delicada está na distribuição inicial dos blocos entre as fitas.
+
+->>Analise
+-A análise da intercalação polifásica é complicada.
+-O que se sabe é que ela é ligeraimente melhor do que a intercalação balanceada para valores menores que f.
+- Para valores de f>8, a intercalação balanceada de vários caminhos podem ser mais rápida.
+
+->> Processo de funcionamento da intercalação polifásica:
+-Os blocos ordenados são distribuídos de forma desigual
+entre as fitas disponíveis.
+-Uma fita é deixada livre. Em seguida, a intercalação de blocos ordenados é executada 20
+-até que uma das fitas de entrada se esvazie. A fita vazia torna-se a próxima fita de saída. 
+
+Exemplo:
+		INTERCALACAOBALANCEADA
+		INTRECALACAOBLAAANCEADA
+1° passo
+Fita 1: INRT ACEL AABCLO
+Fita 2: AACEN AAD
+
+2° passo (Intercala-se para um Fita 3 deixando a fita 2 livre)
+Fita 1: AABCLO
+Fita 2:
+Fita 3: AACEINNRT AAACDEL
+
+3° passo (Intercala-se a Fita 1 e Fita 3 na Fita 2, deixando a Fita 1 livre)
+Fita 1: 
+Fita 2:	AAAABCCEILNNORT
+Fita 3: AAACDEL
+
+4° passo (Intercala-se para fita 3, deixando a Fita 2 livre)
+Fita 1:
+Fita 2:
+Fita 3: AAAAAAABCCCDEEILLNNORT

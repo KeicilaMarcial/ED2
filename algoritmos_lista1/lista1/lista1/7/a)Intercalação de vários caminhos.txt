@@ -1,0 +1,43 @@
+Intercalação de vários caminhos
+
+Considerações:
+-memoria interna com capacidade para três itens;
+- seis unidades disponiveis de fita magnetica.
+
+Estratégia geral dos métodos de ordenação externa:
+1. Quebre o arquivo em blocos do tamanho da memória interna disponível.
+2. Ordene cada bloco na memória interna.
+3. Intercale os blocos ordenados, fazendo várias passadas sobre o arquivo.
+- A cada passada são criados blocos ordenados cada vez maiores, até que todo o arquivo esteja ordenado.
+
+
+Fase de intercalação, envolvendo os passos:
+1. Leitura do primeiro registro de cada fita.
+2. Retirada do registro contendo a menor chave, armazenando-o em uma fita de saída.
+3. Leitura de um novo registro da fita de onde o registro retirado é proveniente.
+- Ao ler o terceiro registro de um dos blocos, a fita correspondente fica inativa.
+- A fita é reativada quando o terceiro registro das outras fitas forem lidos.
+- Neste momento, um bloco de nove registros ordenados foi formado na fita de saída.
+4. Repetição do processo para os blocos restantes.
+
+
+
+Exemplo
+Para exemplificar, ordenaremos um arquivo em uma fita de entrada, que possui os seguintes 22 registros:
+		INTERCALACAOBALANCEADA
+
+1° passo (quebra do arquivo em blocos do tamanho  da memoria interna disponivel)
+
+Fita 1: INT ACO ADE
+Fita 2: CER ABL A
+Fita 3: AAL ACN
+
+2° passo (resultado da 1ª passada sobre o arquivo)
+Fita 4: AACEILNRT
+Fita 5: AAABCCLNO
+Fita 6: AADE
+
+3° passo (repetindo o processo nos blocos formandos após a 2° passada )
+Fita 1: A A A A A A A B C C C D E E I L L N N O R T
+Fita 2:
+Fita 3:

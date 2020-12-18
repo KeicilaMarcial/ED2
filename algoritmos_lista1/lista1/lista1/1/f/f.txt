@@ -1,0 +1,2 @@
+Um algoritmo de ordenação diz-se estável se preserva a ordem de registros de chaves iguais.
+Isto é, se tais registros aparecem na sequência ordenada na mesma ordem em que estão na sequência inicial.

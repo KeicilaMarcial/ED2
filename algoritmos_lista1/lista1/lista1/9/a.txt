@@ -1,0 +1,1 @@
+V- pois no caso de todos os nós terem FB 0, significa que a arvore está completamente balanceada 

@@ -1,0 +1,21 @@
+Quicksort externo
+
+- O algoritmo utiliza o paradigma de divisão e conquista.
+- O algoritmo ordena in situ um arquivo A = {R1, ... , Rn} de n registros.
+	--  Os registros encontram-se armazenados consecutivamente em memória secundária de acesso randômico.
+- O algoritmo utiliza somente O(log n) unidades de memória interna, não sendo necessária alguma memória externa adicional.
+
+
+- Para ordenar o arquivo A = {R1, ... , Rn}, o algoritmo:
+ 	-- particiona A da seguinte forma: {R1, ... , Ri} = Ri+1 = Ri+2 = ... = Rj-2 = Rj-1 = {Rj, ... , Rn};
+- chama recursivamente o algoritmo em cada um dos subarquivos gerados:
+	-- A1 = {R1, . . . ,Ri} e A2 = {Rj , . . . ,Rn}.
+- Os registros ordenados {Ri+1, ..., Rj-1} correspondem ao pivô do algoritmo, encontrando-se na memória interna durante a execução do mesmo.
+	-- Os subarquivos A1 e A2 contêm os registros menores que Ri+1 e maiores que Rj-1, respectivamente. 
+
+- Para a partição do arquivo, é utilizada uma área de memória interna para o armazenamento do pivô.
+	-- Tamanho da área = j - i - 1, sendo necessariamente = 3.
+- Nas chamadas recursivas, deve-se considerar que:
+	-- deve ser ordenado, inicialmente, o subarquivo de menor tamanho;
+	-- subarquivos vazios ou com um único registro são ignorados;
+	-- caso o arquivo de entrada A possua no máximo (j - i - 1) registros, ele é ordenado em um único passo.

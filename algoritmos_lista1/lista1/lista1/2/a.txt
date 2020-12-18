@@ -1,0 +1,2 @@
+Não corresponde, pois para ser um heap o pai sempre deve ser maior que os filhos,
+ mas construindo a arvore vemos que 28 é pai de 29.

@@ -1,0 +1,23 @@
+- Counting Sort
+- Bucket Sort
+- Radix Sort
+
+Caracteristicas dos algoritmos de ordenação linear:
+
+Counting Sort: 
+	1 - Os valores devem estar entre 0 e k, sendo que devem pertencentes ao conj. dos inteiros.
+	2 - É eficiente quando o range de valores presentes não é muito maior que a quantidade de elementos no vetor
+
+RadixSort:
+	1 - As entradas possuem range definido e um tamanho máximo no número de digitos
+	2 - Necessário ultilização de um segundo algoritmo de ordenação que seja estável, já que ordem na qual são colocados devem ser matidas
+	3 - Necessário chaves únicas
+	4 - Ordena a partir dos dígitos, do menos significativo para o mais significativos
+
+
+BucketSort
+	1 - A entrada deve estar no intervalo [0,1)
+	2 - Os valores devem estar uniformente distribuidos
+	3 - A entrada é dividida em n intervalos
+	4 - Não se espera que muitos valores fiquem em um único balde
+	5 - Para ordenar os baldes é ultilizado um segundo algoritmo

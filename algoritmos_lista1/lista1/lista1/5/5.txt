@@ -1,0 +1,2 @@
+A arvore Binária já fere o conceito de heap, 
+pois os nós a direita são sempre maiores que a raiz, portanto não é heap
